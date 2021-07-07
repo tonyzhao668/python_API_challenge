@@ -2,20 +2,73 @@
 
 The weatherPy and vacationPy are finished today 27/01/21.
 
-When running the programs, please noticed to add_in the required api_key, the original keys have been removed for safty reason.
+## Background
 
-all the required csv and screenshots are supplied.
+To use Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 
-For the cloudiness at openweathermap api site, there are 4 categories, i.e. 801 = 11-25%, 802 = 25-50%, 803 = 51-84%, 804 = 85-100%, 
-however at reality sometime 800 appears. For easy calculation, I assumed 800 = 5%, all others take the average in the range.
 
-Cities leaned finall more than 500.
 
-Beautiful heatmap with more than 500 cities' humidity value presented.
+## Part I - WeatherPy
 
-Vacation cities have selected 9 with city/hotel marked on the heatmap.
-Hotel name and add, rating with city's name, lat, long are available in hotel.csv/hotel_df  
+Create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, it utilizes a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
 
-The API homework is nicely designed with challengs, thanks.
+The first requirement is to create a series of scatter plots to showcase the following relationships:
 
-Finally thank you very much for your kindly review and comments.
+* Temperature (F) vs. Latitude
+* Humidity (%) vs. Latitude
+* Cloudiness (%) vs. Latitude
+* Wind Speed (mph) vs. Latitude
+
+After each plot add a sentence or too explaining what the code is and analyzing.
+
+The second requirement is to run linear regression on each relationship, only this time separating them into Northern Hemisphere (greater than or equal to 0 degrees latitude) and Southern Hemisphere (less than 0 degrees latitude):
+
+* Northern Hemisphere - Temperature (F) vs. Latitude
+* Southern Hemisphere - Temperature (F) vs. Latitude
+* Northern Hemisphere - Humidity (%) vs. Latitude
+* Southern Hemisphere - Humidity (%) vs. Latitude
+* Northern Hemisphere - Cloudiness (%) vs. Latitude
+* Southern Hemisphere - Cloudiness (%) vs. Latitude
+* Northern Hemisphere - Wind Speed (mph) vs. Latitude
+* Southern Hemisphere - Wind Speed (mph) vs. Latitude
+
+After each pair of plots explain what the linear regression is modeling such as any relationships noticed and any other analysis may worth notice.
+
+The notebook must:
+
+* Randomly select **at least** 500 unique (non-repeat) cities based on latitude and longitude.
+* Perform a weather check on each of the cities using a series of successive API calls.
+* Include a print log of each city as it's being processed with the city number and city name.
+* Save a CSV of all retrieved data and a PNG image for each scatter plot.
+
+![Cities searched](Images/weathersearch500pluscities.PNG)
+
+![Temperature](Images/temperaturecities.PNG)
+
+
+### Part II - VacationPy
+
+Now let's work with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
+
+* Create a heat map that displays the humidity for every city from the part I above.
+
+  ![heatmap](Images/heatmap.PNG)
+
+* Narrow down the DataFrame to find your ideal weather condition. For example:
+
+  * A max temperature lower than 80 degrees but higher than 70.
+
+  * Wind speed less than 10 mph.
+
+  * Zero cloudiness.
+
+  * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
+
+* Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
+
+* Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
+
+  ![hotel map](Images/hotel_location.PNG)
+  ![hotel details](Images/hotelselected.PNG)
+  
+
