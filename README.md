@@ -39,7 +39,7 @@ The notebook must:
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
-![Cities searched](Images/search500pluscities.PNG)
+![Cities searched](Images/search500pluscities.png)
 
 ![Temperature](Images/temperaturecities.PNG)
 
