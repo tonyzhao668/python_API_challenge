@@ -50,7 +50,7 @@ Now let's work with weather data to plan future vacations. Use jupyter-gmaps and
 
 * Create a heat map that displays the humidity for every city from the part I above.
 
-  ![heatmap](Images/heatmap.PNG)
+  ![heatmap](Images/heatmap.png)
 
 * Narrow down the DataFrame to find your ideal weather condition. For example:
 
@@ -66,7 +66,7 @@ Now let's work with weather data to plan future vacations. Use jupyter-gmaps and
 
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
-  ![hotel map](Images/hotel_location.PNG)
+  ![hotel map](Images/hotel_location.png)
   
   ![hotel details](Images/hotelselected.PNG)
   
