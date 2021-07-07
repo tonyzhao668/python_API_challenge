@@ -6,8 +6,6 @@ The weatherPy and vacationPy are finished today 27/01/21.
 
 To use Python requests, APIs, and JSON traversals to answer a fundamental question: "What's the weather like as we approach the equator?"
 
-
-
 ## Part I - WeatherPy
 
 Create a Python script to visualize the weather of 500+ cities across the world of varying distance from the equator. To accomplish this, it utilizes a [simple Python library](https://pypi.python.org/pypi/citipy), the [OpenWeatherMap API](https://openweathermap.org/api), and a little common sense to create a representative model of weather across world cities.
@@ -41,7 +39,7 @@ The notebook must:
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
-![Cities searched](Images/weathersearch500pluscities.PNG)
+![Cities searched](Images/search500pluscities.PNG)
 
 ![Temperature](Images/temperaturecities.PNG)
 
@@ -69,6 +67,7 @@ Now let's work with weather data to plan future vacations. Use jupyter-gmaps and
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
   ![hotel map](Images/hotel_location.PNG)
+  
   ![hotel details](Images/hotelselected.PNG)
   
 
