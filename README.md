@@ -39,10 +39,10 @@ The notebook must:
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
-* More than 500 cities have been searched:
+* **More than 500 cities have been searched:**
 ![Cities searched](Images/search500pluscities.png)
 
-* Temperature distribution in the world cities:
+* **Temperature distribution in the world cities:**
 ![Temperature](Images/temperaturecities.PNG)
 
 
@@ -50,7 +50,7 @@ The notebook must:
 
 Now let's work with weather data to plan future vacations. Use jupyter-gmaps and the Google Places API for this part of the assignment.
 
-* Create a heat map that displays the humidity for every city from the part I above.
+* **Create a heat map that displays the humidity for every city from the part I above.**
 
   ![heatmap](Images/heatmap.png)
 
@@ -67,10 +67,10 @@ Now let's work with weather data to plan future vacations. Use jupyter-gmaps and
 
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
-* Selected hotels' location map: 
+* **Selected hotels' location map:**
   ![hotel map](Images/hotel_location.png)
   
- * Selected hotels' details: 
+ * **Selected hotels' details: **
   ![hotel details](Images/hotelselected.PNG)
   
 
