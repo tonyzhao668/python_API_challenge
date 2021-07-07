@@ -39,8 +39,10 @@ The notebook must:
 * Include a print log of each city as it's being processed with the city number and city name.
 * Save a CSV of all retrieved data and a PNG image for each scatter plot.
 
+* More than 500 cities have been searched:
 ![Cities searched](Images/search500pluscities.png)
 
+* Temperature distribution in the world cities:
 ![Temperature](Images/temperaturecities.PNG)
 
 
@@ -52,22 +54,23 @@ Now let's work with weather data to plan future vacations. Use jupyter-gmaps and
 
   ![heatmap](Images/heatmap.png)
 
-* Narrow down the DataFrame to find your ideal weather condition. For example:
+* Narrow down the DataFrame to find my ideal weather condition:
 
   * A max temperature lower than 80 degrees but higher than 70.
 
-  * Wind speed less than 10 mph.
+  * Wind speed less than 5 mph.
 
-  * Zero cloudiness.
+  * Cloudiness <= 5.
 
-  * Drop any rows that don't contain all three conditions. You want to be sure the weather is ideal.
 
 * Using Google Places API to find the first hotel for each city located within 5000 meters of your coordinates.
 
 * Plot the hotels on top of the humidity heatmap with each pin containing the **Hotel Name**, **City**, and **Country**.
 
+* Selected hotels' location map: 
   ![hotel map](Images/hotel_location.png)
   
+ * Selected hotels' details: 
   ![hotel details](Images/hotelselected.PNG)
   
 
