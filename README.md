@@ -70,7 +70,7 @@ Now let's work with weather data to plan future vacations. Use jupyter-gmaps and
 * **Selected hotels' location map:**
   ![hotel map](Images/hotel_location.png)
   
- * **Selected hotels' details: **
+ * **Selected hotels' details:**
   ![hotel details](Images/hotelselected.PNG)
   
 
